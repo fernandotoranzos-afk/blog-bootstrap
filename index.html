@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <!-- Primero Bootstrap: ofrece las clases listas para usar -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous"
+/>
+
+<!-- Después tu CSS: permite ajustar los estilos del blog -->
+<link rel="stylesheet" href="./css/estilos.css" />
+</head>
+<body>
+    <main>
+    <section aria-label="Artículos destacados">
+    <div id="carouselDestacados" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-secondary text-white text-center py-5">
+                    <h2>Artículo destacado 1</h2>
+                    <p>Aquí irá la imagen del equipo.</p>
+                </div> <!-- Cierra la caja gris -->
+            </div><!-- Cierra carousel-item -->
+    <div class="carousel-item">
+    <div class="bg-primary text-white text-center py-5">
+        <h2>Artículo destacado 2</h2>
+        <p>Contenido provisional del segundo destacado.</p>
+    </div>
+</div>        
+        </div><!-- 🔴 CIERRA carousel-inner -->
+        <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDestacados"
+        data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDestacados"
+        data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div> <!-- Cierra carouselDestacados -->
+</section>
+    <div class="container my-5">
+    <div class="row">
+        <section class="col-12 col-md-8" aria-labelledby="titulo-entradas">
+            <h2 id="titulo-entradas">Últimas entradas</h2>
+            <article class="card mb-4">
+    <div class="bg-light text-center p-5">
+        Imagen de la entrada 1
+    </div>
+
+    <div class="card-body">
+        <h3 class="card-title">Título de la primera entrada</h3>
+        <p class="card-text">
+            Escribí aquí una breve descripción del artículo.
+        </p>
+        <a href="./paginas/entrada-1.html" class="btn btn-primary">
+            Ver más
+        </a>
+    </div>
+            </article>      
+             <article class="card mb-4">
+    <div class="bg-light text-center p-5">
+        Imagen de la entrada 2
+    </div>
+
+    <div class="card-body">
+        <h3 class="card-title">Título de la segunda entrada</h3>
+        <p class="card-text">
+            Escribí aquí una breve descripción del artículo.
+        </p>
+        <a href="./paginas/entrada-2.html" class="btn btn-primary">
+            Ver más
+        </a>
+    </div>
+            </article>      
+             <article class="card mb-4">
+    <div class="bg-light text-center p-5">
+        Imagen de la entrada 3
+    </div>
+
+    <div class="card-body">
+        <h3 class="card-title">Título de la tercera entrada</h3>
+        <p class="card-text">
+            Escribí aquí una breve descripción del artículo.
+        </p>
+        <a href="./paginas/entrada-3.html" class="btn btn-primary">
+            Ver más
+        </a>
+    </div>
+            </article>    
+            <nav aria-label="Páginas de entradas del blog">
+    <ul class="pagination">
+        <li class="page-item active">
+            <span class="page-link" aria-current="page">1</span>
+        </li>
+        <li class="page-item disabled">
+            <button class="page-link" type="button" disabled>2</button>
+        </li>
+        <li class="page-item disabled">
+            <button class="page-link" type="button" disabled>Siguiente</button>
+        </li>
+    </ul>
+</nav>  
+        </section>
+
+        <aside class="col-12 col-md-4">
+            <h2>Explorar artículos</h2>
+            <form role="search" class="mb-4">
+    <label for="buscar-articulo" class="form-label">
+        Buscar artículos
+    </label>
+    <input
+        id="buscar-articulo"
+        type="search"
+        class="form-control mb-2"
+        placeholder="Escribí una palabra"
+    >
+    <button type="button" class="btn btn-primary">
+        Buscar
+    </button>
+
+</form>
+            <section class="d-none d-md-block mt-4" aria-label="Publicidad">
+    <div class="border rounded bg-light text-center p-4">
+        <p class="mb-0">Espacio para publicitario</p>
+    </div>
+</section>
+        </aside>
+        
+    </div>
+</div>
+    
+</main>
+    
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
