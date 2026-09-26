@@ -1,4 +1,14 @@
 *{margin: 0;
 padding:0;
 box-sizing: border-box;}
+.dancing-script-uniquifier{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-size: 50px;
+  font-style: normal;
+}
+.modal-backdrop.show {
+    opacity: 1; /* Cambia la opacidad de 0.5 (por defecto) a 1 (totalmente opaco) */
+}
 
