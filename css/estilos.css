@@ -1,4 +1,12 @@
-*{margin: 0;
-padding:0;
-box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.img-rabo {
+  width: 450px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rabo de toro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <main class="d-flex flex-column align-items-center gap-4 py-3">
+      <div class="d-flex w-50 gap-4">
+        <img
+          class="img-rabo"
+          src="https://www.guiarepsol.com/content/dam/repsol-guia/contenidos-imagenes/comer/nuestros-favoritos/restaurante-casa-pepe-juderia-cordoba/gr-cms-media-featured_images-none-1eee71eb-1540-4641-9c9a-6bd1cf267150-01-guia-repsol-casa-pepe-cordoba-22-de-enero-de-2022-177.jpg"
+          alt="imagen de comida tipica cordobesa"
+          title="Rabo Toro"
+        />
+        <div>
+          <h2 class="text-center">Rabo de toro</h2>
+          <p>
+            Este guiso es otro de los indispensables del recetario cordobés. Es
+            de esos platos caseros que requieren de mimo y, sobre todo, mucha
+            paciencia para que la carne quede tierna, se separe fácilmente del
+            hueso y prácticamente se deshaga en la boca. Aquí tiramos también de
+            los cánones que dicta la Cofradía Gastronómica del Rabo de Toro
+            Cordobés para dar con su receta original. Además de la carne,
+            incluye cebolla, zanahoria, tomate, aceite, vino amontillado, ajo,
+            sal, pimienta, clavo, azafrán y agua. Como la inmensa mayoría de
+            platos de cocción lenta, es preferible prepararlo la víspera del día
+            en el que se va a consumir. Lo habitual, además, es servirlo
+            acompañado de unas buenas patatas fritas.
+          </p>
+        </div>
+      </div>
+      <form class="w-50">
+        <div>
+          <h6>Deja una respuesta</h6>
+          <p>
+            Tu dirección de correo electrónico no será publicada. Los campos
+            obligatorios están marcados con *
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="InputComent" class="form-label">Comentarios*</label>
+          <textarea
+            type="text"
+            class="form-control"
+            id="InputComent"
+            aria-describedby="emailHelp"
+            required
+            minlength="5"
+            max="500"
+          >
+          </textarea>
+        </div>
+        <div class="mb-3">
+          <label for="InputName" class="form-label">Nombre*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="InputName"
+            required
+            minlength="1"
+            maxlength="40"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="InputEmail" class="form-label">Correo Electronico*</label>
+          <input
+            type="email"
+            class="form-control"
+            id="InputEmail"
+            required
+            minlength="5"
+            max="40"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Guardar los datos en el navegador para la próxima vez que comente
+          </label>
+        </div>
+        <button type="submit" class="btn btn-dark">Enviar Comentario</button>
+      </form>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
