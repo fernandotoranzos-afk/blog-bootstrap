@@ -2,3 +2,88 @@
 padding:0;
 box-sizing: border-box;}
 
+/* Página de error 404 */
+
+.error-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.error-page > div {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Número 404 */
+.error-page .display-1 {
+    color: #1f3047;
+    font-size: 120px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+/* Ícono de plato, cuchillo y tenedor */
+.error-page .bi-fork-knife {
+    font-size: 80px;
+    color: #f5b82e !important;
+}
+
+/* Título */
+.error-page h1 {
+    color: #1f3047;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Texto descriptivo */
+.error-page p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.error-page .btn-dark {
+    background-color: #1f3047;
+    border-color: #1f3047;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+/* Efecto al pasar el mouse */
+.error-page .btn-dark:hover {
+    background-color: #152235;
+    border-color: #152235;
+}
+
+/* Ícono de inicio dentro del botón */
+.error-page .btn .bi-house {
+    font-size: 1rem;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 576px) {
+
+    .error-page .display-1 {
+        font-size: 80px;
+    }
+
+    .error-page .bi-fork-knife {
+        font-size: 60px;
+    }
+
+    .error-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .error-page p {
+        font-size: 1rem;
+    }
+
+    .error-page .btn-dark {
+        font-size: 1rem;
+    }
+}
