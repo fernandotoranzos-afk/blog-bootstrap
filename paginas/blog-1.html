@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+      <header>
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid flex-wrap">
+          <a class="navbar-brand img-logo" href="../index.html"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./iniciar-sesion.html"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcion"
+                >
+                  Suscripción
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria-imagenes.html"
+                  >Galeria de imágenes</a
+                >
+              </li>
+            </ul>
+            <form class="modal text-primary" id="suscripcion">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Escribe tu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre o Apodo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Escribe tu nombre o apodo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Preferencias alimentarias</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="preferencias"
+                  placeholder="Escribe tus preferencias alimentarias"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Deseo recibir notificaciones por email</label
+                >
+              </div>
+              <button type="reset" class="btn btn-primary">
+                Limpiar pantalla
+              </button>
+              <button type="submit" class="btn btn-primary">Confirmar</button>
+            </form>
+          </div>
+          <div class="w-100">
+            <p
+              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+            >
+              Rolling comidas
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 mb-4">
+            <img
+              class="img-blog img-fluid"
+              src="https://www.guiarepsol.com/content/dam/repsol-guia/contenidos-imagenes/comer/nuestros-favoritos/restaurante-casa-pepe-juderia-cordoba/gr-cms-media-featured_images-none-1eee71eb-1540-4641-9c9a-6bd1cf267150-01-guia-repsol-casa-pepe-cordoba-22-de-enero-de-2022-177.jpg"
+              alt="imagen de comida tipica cordobesa"
+              title="Rabo Toro"
+            />
+            <div>
+              <h2 class="text-center text-lg-start">Rabo de toro</h2>
+              <p>
+                Este guiso es otro de los indispensables del recetario cordobés.
+                Es de esos platos caseros que requieren de mimo y, sobre todo,
+                mucha paciencia para que la carne quede tierna, se separe
+                fácilmente del hueso y prácticamente se deshaga en la boca. Aquí
+                tiramos también de los cánones que dicta la Cofradía
+                Gastronómica del Rabo de Toro Cordobés para dar con su receta
+                original. Además de la carne, incluye cebolla, zanahoria,
+                tomate, aceite, vino amontillado, ajo, sal, pimienta, clavo,
+                azafrán y agua. Como la inmensa mayoría de platos de cocción
+                lenta, es preferible prepararlo la víspera del día en el que se
+                va a consumir. Lo habitual, además, es servirlo acompañado de
+                unas buenas patatas fritas.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <form class="mb-4">
+              <div>
+                <h6>Deja una respuesta</h6>
+                <p>
+                  Tu dirección de correo electrónico no será publicada. Los
+                  campos obligatorios están marcados con *
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="InputComent" class="form-label">Comentarios*</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="InputComent"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="5"
+                  max="500"
+                >
+                </textarea>
+              </div>
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Nombre*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputName"
+                  required
+                  minlength="1"
+                  maxlength="40"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label"
+                  >Correo Electronico*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail"
+                  required
+                  minlength="5"
+                  max="40"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Guardar los datos en el navegador para la próxima vez que
+                  comente
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark">
+                Enviar Comentario
+              </button>
+            </form>
+          </div>
+
+          <div class="my-5">
+              <h3 class=" mb-3">Comentarios</h3>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Juan Navarro</strong>
+                <span class="text-muted">- Hace 4 horas</span>
+                <p class="mb-0 mt-2">Lo hice el domingo con vino amontillado y quedó la carne deshaciéndose. Tal cual dice la nota: mejor de un día para el otro.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Nazarena Dominguez</strong>
+                <span class="text-muted">- Hace 3 horas</span>
+                <p class="mb-0 mt-2">En Córdoba es un clásico y esta receta se entiende fácil. Las patatas fritas al lado no son opcionales.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Maria Cruz</strong>
+                <span class="text-muted">- Hace 8 horas</span>
+                <p class="mb-0 mt-2">>Me sirvió lo de la paciencia. La primera vez lo saqué antes de tiempo y el rabo estaba duro. Ahora lo dejo más horas y sale tierno.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Lucas Barrionuevo</strong>
+                <span class="text-muted">- Hace 12 horas</span>
+                <p class="mb-0 mt-2">Buen plato de olla. Si no consigo azafrán, ¿puedo usar colorante o cambia mucho el gusto?</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Julia Martinez</strong>
+                <span class="text-muted">- Hace 2 dias</span>
+                <p class="mb-0 mt-2">Lo preparé la víspera, como recomiendan, y al otro día estaba todavía mejor. Para una comida en familia cierra perfecto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

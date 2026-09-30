@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.img-blog {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
 .dancing-script-uniquifier {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
