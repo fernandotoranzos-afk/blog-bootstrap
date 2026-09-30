@@ -3,92 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog-2 a desarrollar</title>
+    <title>Proyecto</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
-  </head>
+    <link rel="stylesheet" href="../css/estilos.css">
   <body>
-    <main class="d-flex flex-column align-items-center gap-4 py-3">
-      <div class="d-flex w-50 gap-4">
-        <img
-          class="img-rabo"
-          src="https://www.guiarepsol.com/content/dam/repsol-guia/contenidos-imagenes/comer/nuestros-favoritos/restaurante-casa-pepe-juderia-cordoba/gr-cms-media-featured_images-none-1eee71eb-1540-4641-9c9a-6bd1cf267150-01-guia-repsol-casa-pepe-cordoba-22-de-enero-de-2022-177.jpg"
-          alt="imagen de comida tipica cordobesa"
-          title="blog-2 a desarrollar"
-        />
-        <div>
-          <h2 class="text-center">Rabo de toro</h2>
-          <p>
-            Este guiso es otro de los indispensables del recetario cordobés. Es
-            de esos platos caseros que requieren de mimo y, sobre todo, mucha
-            paciencia para que la carne quede tierna, se separe fácilmente del
-            hueso y prácticamente se deshaga en la boca. Aquí tiramos también de
-            los cánones que dicta la Cofradía Gastronómica del Rabo de Toro
-            Cordobés para dar con su receta original. Además de la carne,
-            incluye cebolla, zanahoria, tomate, aceite, vino amontillado, ajo,
-            sal, pimienta, clavo, azafrán y agua. Como la inmensa mayoría de
-            platos de cocción lenta, es preferible prepararlo la víspera del día
-            en el que se va a consumir. Lo habitual, además, es servirlo
-            acompañado de unas buenas patatas fritas.
-          </p>
+
+    <main class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 mb-4">
+            <img
+              class="img-blog img-fluid"
+              src="https://blog.alquilerargentina.com/wp-content/uploads/2018/12/platos-mendocinos-tomatican.jpg?_gl=1*pgm8qi*_gcl_au*MTQ0MTIxMjUzLjE3OTA3MTQyNTkuLS4tLjE3OTA3MTQyNTguMTUzNzQ3MjczMS4xNzkwNzE0MjU5LjE3OTA3MTQyNTg.*_ga*MjA3NjY2NjgxNi4xNzkwNzE0MjU5*_ga_13TLDDN70N*czE3OTA3MTQyNTgkbzEkZzAkdDE3OTA3MTQyNTgkajYwJGwwJGgw"
+              alt="imagen de una comida tipica mendocina"
+              title="Tomaticán"
+            />
+            <div>
+              <h2 class="text-center text-lg-start">Tomaticán</h2>
+              <p>
+                Hablar del tomaticán en la Argentina nos lleva inevitablemente a la región de Cuyo, donde es uno de los platos típicos de su cocina, de la misma manera que existe en Chile, donde inició su aventura americana.
+                Su origen está bien definido en América, y remite al siglo XVI, momento de la Conquista. Los españoles aportaron la carne de res, huevos y la cebolla a la receta actual, mientras que los huarpes contribuyeron con el maíz (choclo), el tomate y el morrón.
+                El tomaticán también tiene influencia de la cocina francesa, lo cual se destaca en su colorido. Consiste en cebolla, morrón, zanahoria y tomates, que forman una especie de estofado gracias a la miga de pan y la cebolla de verdeo. Al final se le pone huevo hasta que se espese.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <form class="mb-4">
+              <div>
+                <h6>Deja una respuesta</h6>
+                <p>
+                  Tu dirección de correo electrónico no será publicada. Los
+                  campos obligatorios están marcados con *
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="InputComent" class="form-label">Comentarios*</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="InputComent"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="5"
+                  max="500"
+                >
+                </textarea>
+              </div>
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Nombre*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputName"
+                  required
+                  minlength="1"
+                  maxlength="40"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label"
+                  >Correo Electronico*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail"
+                  required
+                  minlength="5"
+                  max="40"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Guardar los datos en el navegador para la próxima vez que
+                  comente
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark">
+                Enviar Comentario
+              </button>
+            </form>
+          </div>
+
+          <div class="my-5">
+              <h3 class=" mb-3">Comentarios</h3>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Valentina Rios</strong>
+                <span class="text-muted">- Hace 2 horas</span>
+                <p class="mb-0 mt-2">Lo hice con choclo fresco y tomate bien maduro. Quedó jugoso y con ese color que menciona la nota. En casa pidieron repetición.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Estban Molina</strong>
+                <span class="text-muted">- Hace 3 horas</span>
+                <p class="mb-0 mt-2">En Mendoza lo comemos seguido. El truco del huevo al final para espesar funciona perfecto. No lo dejen pasar de punto.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Camila Herrera</strong>
+                <span class="text-muted">- Hace 1 semana</span>
+                <p class="mb-0 mt-2">Me gustó la mezcla de influjos: huarpe y español. Yo le sumé un poco de cebolla de verdeo extra y quedó más aromático.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Nicolas Paredes</strong>
+                <span class="text-muted">- Hace 1 mes</span>
+                <p class="mb-0 mt-2">¿Se puede hacer sin morrón o cambia mucho? Lo intenté con solo tomate y cebolla y igual salió rico, aunque menos colorido.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Sofia Benitez</strong>
+                <span class="text-muted">- Hace 4 meses</span>
+                <p class="mb-0 mt-2">Lo preparé para un almuerzo familiar y cerró excelente con un Malbec. Al otro día, como dicen, estaba todavía mejor.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <form class="w-50">
-        <div>
-          <h6>Deja una respuesta</h6>
-          <p>
-            Tu dirección de correo electrónico no será publicada. Los campos
-            obligatorios están marcados con *
-          </p>
-        </div>
-        <div class="mb-3">
-          <label for="InputComent" class="form-label">Comentarios*</label>
-          <textarea
-            type="text"
-            class="form-control"
-            id="InputComent"
-            aria-describedby="emailHelp"
-            required
-            minlength="5"
-            max="500"
-          >
-          </textarea>
-        </div>
-        <div class="mb-3">
-          <label for="InputName" class="form-label">Nombre*</label>
-          <input
-            type="text"
-            class="form-control"
-            id="InputName"
-            required
-            minlength="1"
-            maxlength="40"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="InputEmail" class="form-label">Correo Electronico*</label>
-          <input
-            type="email"
-            class="form-control"
-            id="InputEmail"
-            required
-            minlength="5"
-            max="40"
-          />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Guardar los datos en el navegador para la próxima vez que comente
-          </label>
-        </div>
-        <button type="submit" class="btn btn-dark">Enviar Comentario</button>
-      </form>
     </main>
 
     <script
@@ -98,3 +135,4 @@
     ></script>
   </body>
 </html>
+

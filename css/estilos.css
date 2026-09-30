@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-.img-rabo {
-  width: 450px;
-  height: 400px;
+.img-blog {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
 }
