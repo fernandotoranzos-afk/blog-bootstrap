@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+      <header>
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid flex-wrap">
+          <a class="navbar-brand img-logo" href="../index.html"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./iniciar-sesion.html"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcion"
+                >
+                  Suscripción
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria-imagenes.html"
+                  >Galeria de imágenes</a>
+              </li>
+            </ul>
+            <form class="modal text-primary" id="suscripcion">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Escribe tu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre o Apodo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Escribe tu nombre o apodo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Preferencias alimentarias</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="preferencias"
+                  placeholder="Escribe tus preferencias alimentarias"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Deseo recibir notificaciones por email</label
+                >
+              </div>
+              <button type="reset" class="btn btn-primary">
+                Limpiar pantalla
+              </button>
+              <button type="submit" class="btn btn-primary">Confirmar</button>
+            </form>
+          </div>
+          <div class="w-100">
+            <p
+              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+            >
+              Rolling comidas
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-10">
+          <div class="d-flex flex-column flex-lg-row align-items-center gap-4 mb-4">
+            <img
+              class="img-blog img-fluid"
+              src="https://blog.moebiusviajes.com/wp-content/uploads/2021/05/portada-2.jpg"
+              alt="imagen de comida tipica del Norte Argentino"
+              title="Locro"
+            />
+            <div>
+              <h2 class="text-center text-lg-start">Locro</h2>
+              <p>
+                Sin duda, unos de los platos más populares deL Norte Argwntino es el Locro. Consiste en una especie de guiso de maíz, carne y tripa de vaca gorda, el cual incluye zapallo amarillo criollo y un toque de carne de cerdo con todo y huesos. 
+                Generalmente, se le añade una salsa que se prepara con grasa sofrita con morrón y cebolla verde cortada. El locro es una comida ideal para los días más fríos, pero en Salta se consume durante todo el año. 
+                Para que la experiencia de tu paladar sea mucho más agradable, te recomendamos acompañar esta exquisitez con uno de los famosos vinos salteños producidos en Cafayate, es la combinación perfecta. 
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <form class="mb-4">
+              <div>
+                <h6>Deja una respuesta</h6>
+                <p>
+                  Tu dirección de correo electrónico no será publicada. Los
+                  campos obligatorios están marcados con *
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="InputComent" class="form-label">Comentarios*</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="InputComent"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="5"
+                  max="500"
+                >
+                </textarea>
+              </div>
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Nombre*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="InputName"
+                  required
+                  minlength="1"
+                  maxlength="40"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label"
+                  >Correo Electronico*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail"
+                  required
+                  minlength="5"
+                  max="40"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Guardar los datos en el navegador para la próxima vez que
+                  comente
+                </label>
+              </div>
+              <button type="submit" class="btn btn-dark">
+                Enviar Comentario
+              </button>
+            </form>
+          </div>
+
+          <div class="my-5">
+              <h3 class=" mb-3">Comentarios</h3>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Agustina Vélez</strong>
+                <span class="text-muted">- Hace 4 horas</span>
+                <p class="mb-0 mt-2">Lo acompañamos con un torrontés de Cafayate, como dice la nota. Cierra perfecto: el vino corta un poco la grasa y realza el maíz.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Ramiro Quispe</strong>
+                <span class="text-muted">- Hace 1 dia</span>
+                <p class="mb-0 mt-2">En Salta el locro no es solo de invierno. La salsa de grasa con morrón y cebolla verde es lo que lo termina. No la salteen.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Milagros Cornejo</strong>
+                <span class="text-muted">- Hace 3 semanas</span>
+                <p class="mb-0 mt-2">>Lo acompañamos con un torrontés de Cafayate, como dice la nota. Cierra perfecto: el vino corta un poco la grasa y realza el maíz.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Facundo Ledesma</strong>
+                <span class="text-muted">- Hace 2 meses</span>
+                <p class="mb-0 mt-2">Lo acompañamos con un torrontés de Cafayate, como dice la nota. Cierra perfecto: el vino corta un poco la grasa y realza el maíz.</p>
+              </div>
+              <div class="bg-light border rounded p-3 mb-3">
+                <strong>Elena Bustamante</strong>
+                <span class="text-muted">- Hace 2 dias</span>
+                <p class="mb-0 mt-2">Lo dejé a fuego bajo bien largo y al otro día estaba todavía mejor. Para una reunión familiar en Jujuy, no falla.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

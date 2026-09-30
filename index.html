@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Comidas</title>
     <!-- Primero Bootstrap: ofrece las clases listas para usar -->
     <link
+<<<<<<< HEAD
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -23,197 +24,272 @@
     <link rel="stylesheet" href="./css/estilos.css"> 
 </head>
 <body>
+=======
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Después tu CSS: permite ajustar los estilos del blog -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+>>>>>>> 8cb1af5d86dfb541cc03df97c058e9266bab7153
     <header>
-        <nav class="navbar navbar-expand-lg header-nav">
-          <div class="container-fluid flex-wrap">
-              <a class="navbar-brand img-logo" href="./index.html">
-              </a>
-              <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              >
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html"
-                      >Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/iniciar-sesion.html"
-                      >Login</a
-                  >
-                  </li>
-                  <li class="nav-item">
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#suscripcion">
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid flex-wrap">
+          <a class="navbar-brand img-logo" href="./index.html"> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/iniciar-sesion.html"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcion"
+                >
                   Suscripción
-                  </button>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/contacto.html"
-                      >Contacto</a
-                  >
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/sobre-nosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/galeria-imagenes.html">Galeria de imágenes</a>
-                  </li>
-              </ul>
-              <form class="modal text-primary" id="suscripcion">
-                  <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu email">
-                  </div>
-                  <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre o Apodo</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre o apodo">
-                  </div>
-                  <div class="mb-3">
-                  <label for="nombre" class="form-label">Preferencias alimentarias</label>
-                  <input type="text" class="form-control" id="preferencias" placeholder="Escribe tus preferencias alimentarias">
-                  </div>
-                  <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por email</label>
-                  </div>
-                  <button type="reset" class="btn btn-primary">Limpiar pantalla</button>
-                  <button type="submit" class="btn btn-primary">Confirmar</button>
-              </form>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/galeria-imagenes.html"
+                  >Galeria de imágenes</a
+                >
+              </li>
+            </ul>
+            <form class="modal text-primary" id="suscripcion">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Escribe tu email"
+                />
               </div>
-              <div class="w-100">
-              <p class="navbar-text text-center bg-light p-2 dancing-script-uniquifier">Rolling comidas</p>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre o Apodo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Escribe tu nombre o apodo"
+                />
               </div>
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  >Preferencias alimentarias</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="preferencias"
+                  placeholder="Escribe tus preferencias alimentarias"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Deseo recibir notificaciones por email</label
+                >
+              </div>
+              <button type="reset" class="btn btn-primary">
+                Limpiar pantalla
+              </button>
+              <button type="submit" class="btn btn-primary">Confirmar</button>
+            </form>
           </div>
-        </nav>
+          <div class="w-100">
+            <p
+              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+            >
+              Rolling comidas
+            </p>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-    <section aria-label="Artículos destacados">
-    <div id="carouselDestacados" class="carousel slide">
-        <div class="carousel-inner">
+      <section aria-label="Artículos destacados">
+        <div id="carouselDestacados" class="carousel slide">
+          <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="bg-secondary text-white text-center py-5">
-                    <h2>Artículo destacado 1</h2>
-                    <p>Aquí irá la imagen del equipo.</p>
-                </div> <!-- Cierra la caja gris -->
-            </div><!-- Cierra carousel-item -->
-    <div class="carousel-item">
-    <div class="bg-primary text-white text-center py-5">
-        <h2>Artículo destacado 2</h2>
-        <p>Contenido provisional del segundo destacado.</p>
-    </div>
-</div>        
-        </div><!-- 🔴 CIERRA carousel-inner -->
-        <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselDestacados"
-        data-bs-slide="prev"
-    >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-    </button>
+              <div class="bg-secondary text-white text-center py-5">
+                <h2>Artículo destacado 1</h2>
+                <p>Aquí irá la imagen del equipo.</p>
+              </div>
+              <!-- Cierra la caja gris -->
+            </div>
+            <!-- Cierra carousel-item -->
+            <div class="carousel-item">
+              <div class="bg-primary text-white text-center py-5">
+                <h2>Artículo destacado 2</h2>
+                <p>Contenido provisional del segundo destacado.</p>
+              </div>
+            </div>
+          </div>
+          <!-- 🔴 CIERRA carousel-inner -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
 
-    <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselDestacados"
-        data-bs-slide="next"
-    >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-    </button>
-</div> <!-- Cierra carouselDestacados -->
-</section>
-    <div class="container my-5">
-    <div class="row">
-        <section class="col-12 col-md-8" aria-labelledby="titulo-entradas">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDestacados"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+        <!-- Cierra carouselDestacados -->
+      </section>
+      <div class="container my-5">
+        <div class="row">
+          <section class="col-12 col-md-8" aria-labelledby="titulo-entradas">
             <h2 id="titulo-entradas">Últimas entradas</h2>
             <article class="card mb-4">
-    <div class="bg-light text-center p-5">
-        Imagen de la entrada 1
-    </div>
+              <div class="bg-light text-center p-5">Imagen de la entrada 1</div>
 
-    <div class="card-body">
-        <h3 class="card-title">Título de la primera entrada</h3>
-        <p class="card-text">
-            Escribí aquí una breve descripción del artículo.
-        </p>
-        <a href="./paginas/entrada-1.html" class="btn btn-primary">
-            Ver más
-        </a>
-    </div>
-            </article>      
-             <article class="card mb-4">
-    <div class="bg-light text-center p-5">
-        Imagen de la entrada 2
-    </div>
+              <div class="card-body">
+                <h3 class="card-title">Título de la primera entrada</h3>
+                <p class="card-text">
+                  Escribí aquí una breve descripción del artículo.
+                </p>
+                <a href="./paginas/blog-1.html" class="btn btn-primary">
+                  Ver más
+                </a>
+              </div>
+            </article>
+            <article class="card mb-4">
+              <div class="bg-light text-center p-5">Imagen de la entrada 2</div>
 
-    <div class="card-body">
-        <h3 class="card-title">Título de la segunda entrada</h3>
-        <p class="card-text">
-            Escribí aquí una breve descripción del artículo.
-        </p>
-        <a href="./paginas/entrada-2.html" class="btn btn-primary">
-            Ver más
-        </a>
-    </div>
-            </article>      
-             <article class="card mb-4">
-    <div class="bg-light text-center p-5">
-        Imagen de la entrada 3
-    </div>
+              <div class="card-body">
+                <h3 class="card-title">Título de la segunda entrada</h3>
+                <p class="card-text">
+                  Escribí aquí una breve descripción del artículo.
+                </p>
+                <a href="./paginas/blog-2.html" class="btn btn-primary">
+                  Ver más
+                </a>
+              </div>
+            </article>
+            <article class="card mb-4">
+              <div class="bg-light text-center p-5">Imagen de la entrada 3</div>
 
-    <div class="card-body">
-        <h3 class="card-title">Título de la tercera entrada</h3>
-        <p class="card-text">
-            Escribí aquí una breve descripción del artículo.
-        </p>
-        <a href="./paginas/entrada-3.html" class="btn btn-primary">
-            Ver más
-        </a>
-    </div>
-            </article>    
+              <div class="card-body">
+                <h3 class="card-title">Título de la tercera entrada</h3>
+                <p class="card-text">
+                  Escribí aquí una breve descripción del artículo.
+                </p>
+                <a href="./paginas/blog-3.html" class="btn btn-primary">
+                  Ver más
+                </a>
+              </div>
+            </article>
             <nav aria-label="Páginas de entradas del blog">
-    <ul class="pagination">
-        <li class="page-item active">
-            <span class="page-link" aria-current="page" href="./paginas/error404.html">1</span>
-        </li>
-        <li class="page-item disabled">
-            <button class="page-link" type="button" disabled href="./paginas/error404.html">2</button>
-        </li>
-        <li class="page-item disabled">
-            <button class="page-link" type="button" disabled href="./paginas/error404.html">Siguiente</button>
-        </li>
-    </ul>
-</nav>  
-        </section>
+              <ul class="pagination">
+                <li class="page-item active">
+                  <a
+                    class="page-link"
+                    type="button"
+                    aria-current="page"
+                    href="./paginas/error404.html"
+                    >1</a
+                  >
+                </li>
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    type="button"
+                    disabled
+                    href="./paginas/error404.html"
+                    >2</a
+                  >
+                </li>
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    type="button"
+                    disabled
+                    href="./paginas/error404.html"
+                    >Siguiente</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
 
-        <aside class="col-12 col-md-4">
+          <aside class="col-12 col-md-4">
             <h2>Explorar artículos</h2>
             <form role="search" class="mb-4">
-    <label for="buscar-articulo" class="form-label">
-        Buscar artículos
-    </label>
-    <input
-        id="buscar-articulo"
-        type="search"
-        class="form-control mb-2"
-        placeholder="Escribí una palabra"
-    >
-    <button type="button" class="btn btn-primary">
-        Buscar
-    </button>
-
-</form>
+              <label for="buscar-articulo" class="form-label">
+                Buscar artículos
+              </label>
+              <input
+                id="buscar-articulo"
+                type="search"
+                class="form-control mb-2"
+                placeholder="Escribí una palabra"
+              />
+              <button type="button" class="btn btn-primary">Buscar</button>
+            </form>
             <section class="d-none d-md-block mt-4" aria-label="Publicidad">
+<<<<<<< HEAD
     <div class="border rounded bg-light text-center p-4">
         <p class="mb-0">Espacio para publicitario</p>
     </div>
@@ -272,3 +348,21 @@
 ></script>
 </body>
 </html>
+=======
+              <div class="border rounded bg-light text-center p-4">
+                <p class="mb-0">Espacio para publicitario</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+>>>>>>> 8cb1af5d86dfb541cc03df97c058e9266bab7153

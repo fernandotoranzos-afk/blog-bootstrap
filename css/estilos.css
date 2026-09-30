@@ -1,99 +1,111 @@
-*{margin: 0;
-padding:0;
-box-sizing: border-box;}
-.dancing-script-uniquifier{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-blog {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+.dancing-script-uniquifier {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-size: 50px;
   font-style: normal;
 }
+
 .modal-backdrop.show {
-    opacity: 1; /* Cambia la opacidad de 0.5 (por defecto) a 1 (totalmente opaco) */
+  opacity: 1; /* Cambia la opacidad de 0.5 (por defecto) a 1 (totalmente opaco) */
 }
 
 /* Página de error 404 */
 
 .error-page {
-    min-height: 100vh;
-    background-color: #ffffff;
-    padding: 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 /* Contenedor principal */
 .error-page > div {
-    max-width: 900px;
-    width: 100%;
+  max-width: 900px;
+  width: 100%;
 }
 
 /* Número 404 */
 .error-page .display-1 {
-    color: #1f3047;
-    font-size: 120px;
-    line-height: 1;
-    margin-bottom: 20px;
+  color: #1f3047;
+  font-size: 120px;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
-/* Ícono de plato, cuchillo y tenedor */
-.error-page .bi-fork-knife {
-    font-size: 80px;
-    color: #f5b82e !important;
+/* Ícono de plato, cuchillo y tenedor (CORREGIDO: .bi-utensils) */
+.error-page .bi-utensils {
+  font-size: 80px;
+  color: #f5b82e !important;
 }
 
 /* Título */
 .error-page h1 {
-    color: #1f3047;
-    margin-top: 25px;
-    margin-bottom: 15px;
+  color: #1f3047;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 /* Texto descriptivo */
 .error-page p {
-    color: #6c757d;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 /* Botón */
 .error-page .btn-dark {
-    background-color: #1f3047;
-    border-color: #1f3047;
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    border-radius: 8px;
+  background-color: #1f3047;
+  border-color: #1f3047;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
 }
 
 /* Efecto al pasar el mouse */
 .error-page .btn-dark:hover {
-    background-color: #152235;
-    border-color: #152235;
+  background-color: #152235;
+  border-color: #152235;
 }
 
 /* Ícono de inicio dentro del botón */
 .error-page .btn .bi-house {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* Adaptación para celulares */
 @media (max-width: 576px) {
+  .error-page .display-1 {
+    font-size: 80px;
+  }
 
-    .error-page .display-1 {
-        font-size: 80px;
-    }
+  /* CORREGIDO: .bi-utensils */
+  .error-page .bi-utensils {
+    font-size: 60px;
+  }
 
-    .error-page .bi-fork-knife {
-        font-size: 60px;
-    }
+  .error-page h1 {
+    font-size: 1.8rem;
+  }
 
-    .error-page h1 {
-        font-size: 1.8rem;
-    }
+  .error-page p {
+    font-size: 1rem;
+  }
 
-    .error-page p {
-        font-size: 1rem;
-    }
-
-    .error-page .btn-dark {
-        font-size: 1rem;
-    }
+  .error-page .btn-dark {
+    font-size: 1rem;
+  }
 }
