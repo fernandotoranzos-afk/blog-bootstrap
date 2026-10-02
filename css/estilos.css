@@ -19,10 +19,10 @@
   font-size: 50px;
   font-style: normal;
 }
+.modal-backdrop {display: none !important; }
+.custon-mini-modal.modal-dialog { margin:1.75rem auto; max-width: fit-content;}
+.custon-mini-modal.modal-content { border: none; box-shadow: none;}
 
-.modal-backdrop.show {
-  opacity: 1; /* Cambia la opacidad de 0.5 (por defecto) a 1 (totalmente opaco) */
-}
 
 /* Página de error 404 */
 
@@ -109,3 +109,48 @@
     font-size: 1rem;
   }
 }
+
+/* ========================================= */ /* ESTILOS DE LA GALERÍA DE IMÁGENES */ /* ========================================= */ 
+
+/* Título de la galería */ 
+
+.titulo-galeria { 
+  font-family: "Dancing Script", cursive; 
+  font-size: 3rem; 
+  text-align: center; 
+  margin-top: 30px; 
+  margin-bottom: 30px; } 
+  
+  /* Tarjeta de cada imagen */ 
+  
+  .tarjeta-galeria { 
+    height: 100%; 
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); } 
+    
+    /* Imágenes de la galería */ 
+    
+    .tarjeta-galeria img { 
+      width: 100%; height: 220px; 
+      object-fit: cover; } 
+      
+      /* Descripción de cada imagen */ 
+      
+      .descripcion-galeria { 
+        padding: 15px; text-align: center; 
+      } 
+      
+      /* Título de la descripción */ 
+      
+      .descripcion-galeria h5 { 
+        margin-bottom: 8px; 
+      } 
+        
+      /* Texto de la descripción */ 
+      
+      .descripcion-galeria p { 
+        margin-bottom: 0; 
+      }
+
