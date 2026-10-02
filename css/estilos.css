@@ -154,3 +154,61 @@
         margin-bottom: 0; 
       }
 
+.infocontacto {display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+
+}
+/* Formulario de contacto */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+/* Campos de texto */
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Área del mensaje */
+.formulario-contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Botón de envío */
+.formulario-contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #0b5ed7;
+}
+.modal-backdrop {display: none !important; }
+.custon-mini-modal.modal-dialog { margin:1.75rem auto; max-width: fit-content;}
+.custon-mini-modal.modal-content { border: none; box-shadow: none;}
+
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 50px;
+  font-style: normal;
+}
