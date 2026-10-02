@@ -1,6 +1,6 @@
 #  🍝 Blog de comidas - Landing Page
 
-Una página web moderna y adaptable para un blog de cocina llamado "Rolling comidas" de especialidad ficticia, desarrollada como primer proyecto de maquetación web.
+Página web para un blog de cocina llamado "Rolling comidas", desarrollada como primer proyecto de maquetación web.
 
 🔗 **[Ver Demo en vivo] https://rollingcomidas.netlify.app/
 
@@ -13,8 +13,7 @@ Una página web moderna y adaptable para un blog de cocina llamado "Rolling comi
 ![Bootstrap] (https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css)
              (https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js)
              (https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
-
-![Googlefonts] (https://fonts.googleapis.com)
+![Google fonts] (https://fonts.googleapis.com)
                (https://fonts.gstatic.com)
                (https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap)
 ---
@@ -35,7 +34,6 @@ Una página web moderna y adaptable para un blog de cocina llamado "Rolling comi
 │   └── blog-1.html
 │   └── blog-2.html
 │   └── blog-3.html
-│   └── blog-1.html
 │   └── contacto.html
 │   └── error404.html
 │   └── galeria-imagenes.html
@@ -43,8 +41,8 @@ Una página web moderna y adaptable para un blog de cocina llamado "Rolling comi
 │   └── sobre-nosotros.html
 ├── css/
 │   └── estilos.css
-├── imgagenes/
-│   ├── 82517984_9886629.jpg (logo)
+├── imagenes/
+│   ├── galeriaImagenes
 ├── index.html
 └── README.md
 ```
@@ -67,7 +65,7 @@ Una página web moderna y adaptable para un blog de cocina llamado "Rolling comi
 
 ## 👤 Autores
 
-- Leandro Parise - LeaParis
+- Leandro Parise - LeaParizia
 - Sergio Cadenas - sergio-cadenas
 - Fernando Toranzos - fernadotoranzos-afk
 - Cristian Tejeda - Ch72011
