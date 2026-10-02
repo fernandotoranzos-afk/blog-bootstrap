@@ -6,7 +6,6 @@
     <title>Rolling Comidas</title>
     <!-- Primero Bootstrap: ofrece las clases listas para usar -->
     <link
-<<<<<<< HEAD
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -22,26 +21,8 @@
 
     <!-- Después tu CSS: permite ajustar los estilos del blog -->
     <link rel="stylesheet" href="./css/estilos.css"> 
-</head>
-<body>
-=======
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Después tu CSS: permite ajustar los estilos del blog -->
-    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
-  <body>
->>>>>>> 8cb1af5d86dfb541cc03df97c058e9266bab7153
+<body>
     <header>
       <nav class="navbar navbar-expand-lg header-nav">
         <div class="container-fluid flex-wrap">
@@ -93,59 +74,43 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/paginas/galeria-imagenes.html"
+                <a class="nav-link" href="./paginas/galeria-imagenes.html"
                   >Galeria de imágenes</a
                 >
               </li>
             </ul>
-            <form class="modal text-primary" id="suscripcion">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Escribe tu email"
-                />
+            <div class="modal fade custom-mini-modal" id="suscripcion" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <!-- Usamos bg-dark y text-white para la base negra chica -->
+              <div class="modal-content bg-dark text-white p-3 rounded">
+                <div class="modal-body text-center">
+                  <form>
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre o Apodo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre o apodo">
+                      </div>
+                      <div class="mb-3">
+                        <label for="nombre" class="form-label">Preferencias alimentarias</label>
+                        <input type="text" class="form-control" id="preferencias" placeholder="Escribe tus preferencias alimentarias">
+                      </div>
+                      <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por email</label>
+                      </div>
+                        <button type="reset" class="btn btn-primary">Limpiar pantalla</button>
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                    </div>
+                  </form> 
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre o Apodo</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  placeholder="Escribe tu nombre o apodo"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="nombre" class="form-label"
-                  >Preferencias alimentarias</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="preferencias"
-                  placeholder="Escribe tus preferencias alimentarias"
-                />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Deseo recibir notificaciones por email</label
-                >
-              </div>
-              <button type="reset" class="btn btn-primary">
-                Limpiar pantalla
-              </button>
-              <button type="submit" class="btn btn-primary">Confirmar</button>
-            </form>
+            </div>
           </div>
+                  </div>
           <div class="w-100">
             <p
               class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
@@ -289,7 +254,6 @@
               <button type="button" class="btn btn-primary">Buscar</button>
             </form>
             <section class="d-none d-md-block mt-4" aria-label="Publicidad">
-<<<<<<< HEAD
     <div class="border rounded bg-light text-center p-4">
         <p class="mb-0">Espacio para publicitario</p>
     </div>
@@ -313,7 +277,7 @@
       <!-- <div class="col-12 col-md-4 text-center"> -->
       <div class="col-md-4 mb-3 d-none d-md-block text-center">
         <h5 class="mb-3">Síguenos</h5>
-                    <div class="d-flex gap-3 fs-4">
+                    <div class="d-flex ms-5 gap-5 fs-4">
                         <a href="https://facebook.com" class="text-dark me-4 fs-4" target="_blank" rel="noopener">
                            <img src="./imagenes/face.png" alt="Facebook" class="img-fluid mb-3" style="max-height: 30px;">
                         </a>
@@ -348,21 +312,3 @@
 ></script>
 </body>
 </html>
-=======
-              <div class="border rounded bg-light text-center p-4">
-                <p class="mb-0">Espacio para publicitario</p>
-              </div>
-            </section>
-          </aside>
-        </div>
-      </div>
-    </main>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
->>>>>>> 8cb1af5d86dfb541cc03df97c058e9266bab7153
