@@ -162,7 +162,7 @@
     padding: 20px;
 
 }
-/* Formulario de contacto */
+
 .formulario-contacto {
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     box-sizing: border-box;
 }
 
-/* Área del mensaje */
+
 .formulario-contacto textarea {
     min-height: 120px;
     resize: vertical;
@@ -323,4 +323,32 @@ body.main-body {
 
 .register-link:hover {
   text-decoration: underline;
+}
+
+/*cambios*/
+
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 2.5rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Controla el tamaño máximo del logo en el footer */
+.footer-logo {
+  max-width: 130px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Controla el tamaño exacto de los íconos de redes sociales */
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
 }
