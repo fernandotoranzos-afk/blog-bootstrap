@@ -222,6 +222,10 @@ body.main-body {
   background-color: #f8f9fa;
 }
 
+body.main-body main {
+  flex: 1;
+}
+
 /* Fuente personalizada del navbar */
 .dancing-script-uniquifier {
   font-family: "Dancing Script", cursive;
@@ -328,6 +332,7 @@ body.main-body {
 /*cambios*/
 
 .footer-section {
+  width: 100%;
   background-color: #f8f9fa;
   padding: 2.5rem 0;
   border-top: 1px solid #dee2e6;
