@@ -65,7 +65,7 @@ Página web para un blog de cocina llamado "Rolling comidas", desarrollada como 
 
 ## 👤 Autores
 
-- Leandro Parise - LeaParizia
+- Leandro Parizia - LeaParizia
 - Sergio Cadenas - sergio-cadenas
 - Fernando Toranzos - fernadotoranzos-afk
 - Cristian Tejeda - Ch72011
