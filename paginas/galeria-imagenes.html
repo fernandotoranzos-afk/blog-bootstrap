@@ -1,92 +1,611 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolling Comidas</title>
-    <!-- Primero Bootstrap: ofrece las clases listas para usar -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-  crossorigin="anonymous"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
-<!-- Después tu CSS: permite ajustar los estilos del blog -->
-<link rel="stylesheet" href="../css/estilos.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rolling Comidas</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg header-nav">
-          <div class="container-fluid flex-wrap">
-              <a class="navbar-brand img-logo" href="./index.html">
-              </a>
-              <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              >
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html"
-                      >Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/iniciar-sesion.html"
-                      >Login</a
-                  >
-                  </li>
-                  <li class="nav-item">
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#suscripcion">
+  <header>
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid flex-wrap">
+          <a class="navbar-brand img-logo" href="./index.html"> </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  Inicio
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/iniciar-sesion.html">
+                  Login
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suscripcion"
+                >
                   Suscripción
-                  </button>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/contacto.html"
-                      >Contacto</a
-                  >
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/sobre-nosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="./paginas/galeria-imagenes.html">Galeria de imágenes</a>
-                  </li>
-              </ul>
-              <form class="modal text-primary" id="suscripcion">
-                  <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu email">
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/contacto.html">
+                  Contacto
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/sobre-nosotros.html">
+                  Sobre Nosotros
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/galeria-imagenes.html">
+                  Galeria de imágenes
+                </a>
+              </li>
+            </ul>
+
+            <div
+              class="modal fade custom-mini-modal"
+              id="suscripcion"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <!-- Usamos bg-dark y text-white para la base negra chica -->
+                <div class="modal-content bg-dark text-white p-3 rounded">
+                  <div class="modal-body text-center">
+                    <form>
+                      <div>
+                        <div class="mb-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                          >
+                            Email
+                          </label>
+
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Escribe tu email"
+                          />
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">
+                            Nombre o Apodo
+                          </label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombre"
+                            placeholder="Escribe tu nombre o apodo"
+                          />
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">
+                            Preferencias alimentarias
+                          </label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="preferencias"
+                            placeholder="Escribe tus preferencias alimentarias"
+                          />
+                        </div>
+
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+
+                          <label
+                            class="form-check-label"
+                            for="exampleCheck1"
+                          >
+                            Deseo recibir notificaciones por email
+                          </label>
+                        </div>
+
+                        <button
+                          type="reset"
+                          class="btn btn-primary"
+                        >
+                          Limpiar pantalla
+                        </button>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                        >
+                          Confirmar
+                        </button>
+                      </div>
+                    </form>
                   </div>
-                  <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre o Apodo</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre o apodo">
-                  </div>
-                  <div class="mb-3">
-                  <label for="nombre" class="form-label">Preferencias alimentarias</label>
-                  <input type="text" class="form-control" id="preferencias" placeholder="Escribe tus preferencias alimentarias">
-                  </div>
-                  <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones por email</label>
-                  </div>
-                  <button type="reset" class="btn btn-primary">Limpiar pantalla</button>
-                  <button type="submit" class="btn btn-primary">Confirmar</button>
-              </form>
+                </div>
               </div>
-              <div class="w-100">
-              <p class="navbar-text text-center bg-light p-2 dancing-script-uniquifier">Rolling comidas</p>
-              </div>
+            </div>
           </div>
-        </nav>
+
+          <div class="w-100">
+            <p
+              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+            >
+              Rolling comidas
+            </p>
+          </div>
+        </div>
+      </nav>
     </header>
+
+  <!-- TÍTULO -->
+ 
+  <div class="container">
+
+    <h1 class="titulo-galeria">
+      Galería de comidas
+    </h1>
+  
+    <!-- GALERÍA DE IMAGENES -->
+  
+    <div class="row g-4">
+
+
+      <!-- IMAGEN 1 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/asado.webp"
+            alt="Asado argentino"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Asado argentino</h5>
+
+            <p>
+              Descubre el auténtico asado argentino: la tradición del fuego, 
+              los mejores cortes de carne y el arte de compartir alrededor de la parrilla.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 2 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/cordero_patagonico.jpg"
+            alt="Cordero patagónico"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Cordero patagónico</h5>
+
+            <p>
+              Saborea la tradición del sur: cordero patagónico criado en campos abiertos, 
+              con la ternura y el sabor único e inconfundible de la Patagonia..
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 3 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/empanadas-cordobesas.jpg"
+            alt="Empanadas cordobesas"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Empanadas cordobesas</h5>
+
+            <p>
+              Un equilibrio perfecto entre lo dulce y lo salado. Carne cortada a cuchillo, 
+              aceitunas y ese secreto cordobés que las hace irresistibles.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 4 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/flan.jpg"
+            alt="Flan"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Flan</h5>
+
+            <p>
+              El postre argentino por excelencia: flan casero de textura cremosa, dorado caramelo 
+              y el acompañamiento infaltable de dulce de leche o crema.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 5 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/lemonpie.jpg"
+            alt="Lemon Pie"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Lemon Pie</h5>
+
+            <p>
+              Un clásico de la repostería que nunca falla. Frescura cítrica, 
+              textura cremosa y la dulzura justa para un postre irresistible.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 6 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/locro.webp"
+            alt="Locro argentino"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Locro argentino</h5>
+
+            <p>
+              La máxima expresión de la cocina de olla argentina. Textura cremosa, maíz tierno y 
+              esa salsa picantita arriba que lo hace inolvidable.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 7 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/lomitos.jpg"
+            alt="Lomito"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Lomito</h5>
+
+            <p>
+              El rey del sándwich argentino: tierno lomo a la plancha, lechuga, 
+              tomate, jamón, queso y huevo, servido en un pan crujiente e irresistible
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 8 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/pastelitos.jpeg"
+            alt="Pastelitos"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Pastelitos</h5>
+
+            <p>
+              Capas irresistibles de puro hojaldre crocante con un corazón dulce y 
+              un toque brillante de almíbar. La tradición patria hecha delicia.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 9 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/platos-mendocinos-tomatican.jpg"
+            alt="Tomatican, plato mendocino"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Tomatican</h5>
+
+            <p>
+              Un clásico de la gastronomía cuyana: la combinación perfecta de tomates maduros, cebolla salteada, 
+              huevo y el toque justo de orégano, simple y lleno de sabor.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 10 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/sanguchedemilanesa.jpg"
+            alt="Sandwich de milanesa"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Sandwich de milanesa</h5>
+
+            <p>
+              Sabor popular en su máxima expresión. Pan sanguchero, milanesa recién hecha, vegetales frescos 
+              y ese toque único que lo convierte en una verdadera pasión nacional.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- IMAGEN 11 -->
+      <div class="col-12 col-md-4 col-lg-3">
+
+        <div class="tarjeta-galeria">
+
+          <img
+            src="/imagenes/galeriaImagenes/pizza.avif"
+            alt="Pizza argentina"
+          >
+
+          <div class="descripcion-galeria">
+
+            <h5>Pizza argentina</h5>
+
+            <p>
+              La verdadera pasión porteña: masa al molde esponjosa y dorada, una capa generosa 
+              de queso derretido y ese toque inconfundible de orégano y aceitunas.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  
+  <footer class="bg-light py-2">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Columna 1: Imagen / Logotipo -->
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <img
+              src="/imagenes/82517984_9886629.jpg"
+              alt="Logotipo"
+              class="img-fluid mb-3"
+              style="max-height: 150px;"
+            />
+          </div>
+
+          <!-- Columna 2: Redes Sociales -->
+          <div class="col-md-4 mb-3 d-none d-md-block text-center">
+            <h5 class="mb-3">Síguenos</h5>
+
+            <div class="d-flex ms-5 gap-5 fs-4">
+              <a
+                href="https://facebook.com"
+                class="text-dark me-4 fs-4"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/imagenes/face.png"
+                  alt="Facebook"
+                  class="img-fluid mb-3"
+                  style="max-height: 30px;"
+                />
+              </a>
+
+              <a
+                href="https://instagram.com"
+                class="text-dark me-4 fs-4"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/imagenes/insta.png"
+                  alt="Instagram"
+                  class="img-fluid mb-3"
+                  style="max-height: 30px;"
+                />
+              </a>
+
+              <a
+                href="https://twitter.com"
+                class="text-dark fs-4"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="/imagenes/twitter.png"
+                  alt="Twitter"
+                  class="img-fluid mb-3"
+                  style="max-height: 30px;"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Columna 3: Enlaces de Interés o Contacto -->
+          <div
+            class="col-md-4 mb-3 d-none d-md-block text-center text-md-end"
+          >
+            <h5 class="mb-3">Contacto</h5>
+
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                rollingcomidas@gmail.com
+              </li>
+
+              <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                +54 9 381 666 6666
+              </li>
+
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Tucumán, Argentina
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- Bootstrap JS: autorizado por el TP -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+
+</html>
