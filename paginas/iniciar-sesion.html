@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rolling Comidas</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Primero Bootstrap: ofrece las clases listas para usar -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,13 +13,13 @@
       crossorigin="anonymous"
     />
 
-    <!-- Bootstrap Icons -->
+    <!-- Enlace para cargar los Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Google Fonts -->
+    <!-- Enlace para configuracion letra del navbar -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,16 +27,14 @@
       rel="stylesheet"
     />
 
-    <!-- Tu CSS personal -->
+    <!-- Después tu CSS: permite ajustar los estilos del blog -->
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-
-  <body class="main-body">
-    <!-- Header / Navbar -->
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg header-nav">
         <div class="container-fluid flex-wrap">
-          <a class="navbar-brand img-logo" href="../index.html"> </a>
+          <a class="navbar-brand img-logo" href="./index.html"> </a>
 
           <button
             class="navbar-toggler"
@@ -51,13 +49,25 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0">
+            <ul
+              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
+            >
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  Inicio
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./iniciar-sesion.html">Login</a>
+                <a class="nav-link" href="./iniciar-sesion.html">
+                  Login
+                </a>
               </li>
+
               <li class="nav-item">
                 <button
                   type="button"
@@ -68,18 +78,26 @@
                   Suscripción
                 </button>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">
+                  Contacto
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                <a class="nav-link" href="./sobre-nosotros.html">
+                  Sobre Nosotros
+                </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="./galeria-imagenes.html">Galeria de imágenes</a>
+                <a class="nav-link" href="./galeria-imagenes.html">
+                  Galeria de imágenes
+                </a>
               </li>
             </ul>
 
-            <!-- Modal de Suscripción -->
             <div
               class="modal fade custom-mini-modal"
               id="suscripcion"
@@ -87,56 +105,82 @@
               aria-hidden="true"
             >
               <div class="modal-dialog modal-dialog-centered">
+                <!-- Usamos bg-dark y text-white para la base negra chica -->
                 <div class="modal-content bg-dark text-white p-3 rounded">
                   <div class="modal-body text-center">
                     <form>
-                      <div class="mb-3 text-start">
-                        <label for="modalEmail" class="form-label">Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="modalEmail"
-                          placeholder="Escribe tu email"
-                        />
-                      </div>
+                      <div>
+                        <div class="mb-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                          >
+                            Email
+                          </label>
 
-                      <div class="mb-3 text-start">
-                        <label for="nombre" class="form-label">Nombre o Apodo</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="nombre"
-                          placeholder="Escribe tu nombre o apodo"
-                        />
-                      </div>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Escribe tu email"
+                          />
+                        </div>
 
-                      <div class="mb-3 text-start">
-                        <label for="preferencias" class="form-label">Preferencias alimentarias</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="preferencias"
-                          placeholder="Escribe tus preferencias alimentarias"
-                        />
-                      </div>
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">
+                            Nombre o Apodo
+                          </label>
 
-                      <div class="mb-3 form-check text-start">
-                        <input
-                          type="checkbox"
-                          class="form-check-input"
-                          id="exampleCheck1"
-                        />
-                        <label class="form-check-label" for="exampleCheck1">
-                          Deseo recibir notificaciones por email
-                        </label>
-                      </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombre"
+                            placeholder="Escribe tu nombre o apodo"
+                          />
+                        </div>
 
-                      <button type="reset" class="btn btn-primary me-2">
-                        Limpiar pantalla
-                      </button>
-                      <button type="submit" class="btn btn-primary">
-                        Confirmar
-                      </button>
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">
+                            Preferencias alimentarias
+                          </label>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="preferencias"
+                            placeholder="Escribe tus preferencias alimentarias"
+                          />
+                        </div>
+
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+
+                          <label
+                            class="form-check-label"
+                            for="exampleCheck1"
+                          >
+                            Deseo recibir notificaciones por email
+                          </label>
+                        </div>
+
+                        <button
+                          type="reset"
+                          class="btn btn-primary"
+                        >
+                          Limpiar pantalla
+                        </button>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                        >
+                          Confirmar
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -145,7 +189,9 @@
           </div>
 
           <div class="w-100">
-            <p class="navbar-text text-center bg-light p-2 dancing-script-uniquifier mb-0">
+            <p
+              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+            >
               Rolling comidas
             </p>
           </div>
