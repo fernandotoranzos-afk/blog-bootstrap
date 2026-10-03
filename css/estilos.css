@@ -110,7 +110,7 @@
   }
 }
 
-/* ========================================= */ /* ESTILOS DE LA GALERÍA DE IMÁGENES */ /* ========================================= */ 
+ /* ESTILOS DE LA GALERÍA DE IMÁGENES */ 
 
 /* Título de la galería */ 
 
@@ -154,3 +154,201 @@
         margin-bottom: 0; 
       }
 
+.infocontacto {display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+/* Campos de texto */
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.formulario-contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Botón de envío */
+.formulario-contacto button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #0b5ed7;
+}
+.modal-backdrop {display: none !important; }
+.custon-mini-modal.modal-dialog { margin:1.75rem auto; max-width: fit-content;}
+.custon-mini-modal.modal-content { border: none; box-shadow: none;}
+
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 50px;
+  font-style: normal;
+}
+
+/* Mantiene el footer abajo y permite centrar el contenido principal */
+body.main-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Fuente personalizada del navbar */
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+
+/* Centra horizontal y verticalmente la tarjeta de login dentro de la pantalla */
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+/* Ancho del contenedor del formulario */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Estilos para la tarjeta blanca de Inicio de Sesión */
+.login-box {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #212529;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Asegura que los textos (labels) y los inputs queden uno debajo del otro */
+.form-group {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Opciones de recordarme y recuperar contraseña */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.forgot-link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Botón de envío */
+.btn-submit {
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Enlace a la creación de cuenta */
+.register-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.register-link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/*cambios*/
+
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 2.5rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Controla el tamaño máximo del logo en el footer */
+.footer-logo {
+  max-width: 130px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Controla el tamaño exacto de los íconos de redes sociales */
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
