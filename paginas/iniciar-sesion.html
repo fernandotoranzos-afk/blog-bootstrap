@@ -1,16 +1,25 @@
-!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rolling Comidas</title>
-    <!-- Primero Bootstrap: ofrece las clases listas para usar -->
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,14 +27,17 @@
       rel="stylesheet"
     />
 
-    <!-- Después tu CSS: permite ajustar los estilos del blog -->
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <!-- Tu CSS personal -->
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-  <body>
+
+  <body class="main-body">
+    <!-- Header / Navbar -->
     <header>
       <nav class="navbar navbar-expand-lg header-nav">
         <div class="container-fluid flex-wrap">
-          <a class="navbar-brand img-logo" href="./index.html"> </a>
+          <a class="navbar-brand img-logo" href="../index.html"> </a>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -37,22 +49,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0"
-            >
+            <ul class="navbar-nav w-100 justify-content-evenly ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./paginas/iniciar-sesion.html"
-                  >Login</a
-                >
+                <a class="nav-link active" aria-current="page" href="./iniciar-sesion.html">Login</a>
               </li>
               <li class="nav-item">
                 <button
@@ -65,71 +69,83 @@
                 </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./paginas/sobre-nosotros.html"
-                  >Sobre Nosotros</a
-                >
+                <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/paginas/galeria-imagenes.html"
-                  >Galeria de imágenes</a
-                >
+                <a class="nav-link" href="./galeria-imagenes.html">Galeria de imágenes</a>
               </li>
             </ul>
-            <form class="modal text-primary" id="suscripcion">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="Escribe tu email"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre o Apodo</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  placeholder="Escribe tu nombre o apodo"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="nombre" class="form-label"
-                  >Preferencias alimentarias</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="preferencias"
-                  placeholder="Escribe tus preferencias alimentarias"
-                />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Deseo recibir notificaciones por email</label
-                >
-              </div>
-              <button type="reset" class="btn btn-primary">
-                Limpiar pantalla
-              </button>
-              <button type="submit" class="btn btn-primary">Confirmar</button>
-            </form>
-          </div>
-          <div class="w-100">
-            <p
-              class="navbar-text text-center bg-light p-2 dancing-script-uniquifier"
+
+            <!-- Modal de Suscripción -->
+            <div
+              class="modal fade custom-mini-modal"
+              id="suscripcion"
+              tabindex="-1"
+              aria-hidden="true"
             >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-white p-3 rounded">
+                  <div class="modal-body text-center">
+                    <form>
+                      <div class="mb-3 text-start">
+                        <label for="modalEmail" class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="modalEmail"
+                          placeholder="Escribe tu email"
+                        />
+                      </div>
+
+                      <div class="mb-3 text-start">
+                        <label for="nombre" class="form-label">Nombre o Apodo</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nombre"
+                          placeholder="Escribe tu nombre o apodo"
+                        />
+                      </div>
+
+                      <div class="mb-3 text-start">
+                        <label for="preferencias" class="form-label">Preferencias alimentarias</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="preferencias"
+                          placeholder="Escribe tus preferencias alimentarias"
+                        />
+                      </div>
+
+                      <div class="mb-3 form-check text-start">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="exampleCheck1"
+                        />
+                        <label class="form-check-label" for="exampleCheck1">
+                          Deseo recibir notificaciones por email
+                        </label>
+                      </div>
+
+                      <button type="reset" class="btn btn-primary me-2">
+                        Limpiar pantalla
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Confirmar
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-100">
+            <p class="navbar-text text-center bg-light p-2 dancing-script-uniquifier mb-0">
               Rolling comidas
             </p>
           </div>
@@ -137,60 +153,133 @@
       </nav>
     </header>
 
-  <main>
-
-       <body>
-
-    <div class="login-container">
-
+    <!-- Contenido principal centrado -->
+    <main class="main-content">
+      <div class="login-container">
         <div class="login-box">
+          <h1 class="login-title">Bienvenido</h1>
+          <p class="subtitle">Inicia sesión para continuar</p>
 
-            <h1>Bienvenido</h1>
-            <p class="subtitle">Inicia sesión para continuar</p>
+          <form>
+            <!-- Campo Correo -->
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
 
-            <form>
+            <!-- Campo Contraseña -->
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
 
-                <div class="input-group">
-                    <label for="email">Correo electrónico</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        placeholder="tu@email.com"
-                        required
-                    >
-                </div>
+            <!-- Opciones extra -->
+            <div class="login-options">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" />
+                <label class="form-check-label" for="rememberMe">
+                  Recordarme
+                </label>
+              </div>
+              <a href="./error404.html" class="forgot-link">¿Olvidaste tu contraseña?</a>
+            </div>
 
-                <div class="input-group">
-                    <label for="password">Contraseña</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        placeholder="••••••••"
-                        required
-                    >
-                </div>
+            <!-- Botón de Iniciar Sesión -->
+            <button type="submit" class="btn btn-primary btn-submit">
+              Iniciar sesión
+            </button>
+          </form>
 
-                <div class="options">
-                    <label class="remember">
-                        <input type="checkbox">
-                        <span>Recordarme</span>
-                    </label>
-
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
-
-                <button type="submit">Iniciar sesión</button>
-
-            </form>
-
-            <p class="register">
-                ¿No tienes una cuenta?
-                <a href="#">Crear cuenta</a>
-            </p>
-
+          <p class="register-text">
+            ¿No tienes una cuenta?
+            <a href="./error404.html" class="register-link">Crear cuenta</a>
+          </p>
         </div>
+      </div>
+    </main>
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <!-- Columna 1: Logotipo -->
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <img
+              src="../imagenes/82517984_9886629.jpg"
+              alt="Logotipo"
+              class="img-fluid footer-logo"
+            />
+          </div>
 
-</body>
+          <!-- Columna 2: Redes Sociales -->
+          <div class="col-12 col-md-4 text-center">
+            <h5 class="mb-3">Síguenos</h5>
+            <div class="d-flex justify-content-center gap-4 fs-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img
+                  src="../imagenes/face.png"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+
+              <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img
+                  src="../imagenes/insta.png"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+
+              <a href="https://twitter.com" target="_blank" rel="noopener">
+                <img
+                  src="../imagenes/twitter.png"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 3: Contacto -->
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <h5 class="mb-3">Contacto</h5>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="mb-2">
+                <i class="bi bi-envelope-fill me-2"></i>
+                rollingcomidas@gmail.com
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone-fill me-2"></i>
+                +54 9 381 666 6666
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                Tucumán, Argentina
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
